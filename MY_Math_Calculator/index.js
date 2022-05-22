@@ -1,5 +1,5 @@
-const dropButtons = document.querySelectorAll(".drop-btn");
-const submenus = document.querySelectorAll(".dropdown-content");
+const dropButtons = document.querySelectorAll(".nav__dropdown-btn");
+const submenus = document.querySelectorAll(".nav__dropdown-content");
 
 for (let i = 0; i < dropButtons.length; i++) {
   const dropButton = dropButtons[i];
@@ -12,8 +12,8 @@ for (let i = 0; i < dropButtons.length; i++) {
 }
 //this will close the dropdown if we click outside
 window.onclick = function (event) {
-  if (!event.target.matches(".drop-btn")) {
-    const dropdowns = document.getElementsByClassName("dropdown-content");
+  if (!event.target.matches(".nav__dropdown-btn")) {
+    const dropdowns = document.getElementsByClassName("nav__dropdown-content");
     for (let i = 0; i < dropdowns.length; i++) {
       let openDropdown = dropdowns[i];
       if (openDropdown.classList.contains("show")) {

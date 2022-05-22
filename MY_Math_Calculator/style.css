@@ -105,3 +105,8 @@ button {
   text-align: center;
   max-width: 50%;
 }
+
+/* clasa asta nu trebuie eliminata , e folosita in index.js*/
+.show {
+  display: flex;
+}
