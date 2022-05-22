@@ -17,12 +17,13 @@ body {
   width: 100vw;
   height: 100vh;
 }
-.separator {
+.header__title-separator {
   height: 5px;
   width: 100%;
   background-color: #ff0033;
+  margin: 10px auto;
 }
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +32,7 @@ body {
 .title {
   margin-bottom: 30px;
 }
-.primary-navigation ul {
+nav ul {
   display: flex;
   gap: 30px;
 }
@@ -42,11 +43,11 @@ button {
   border: none;
   cursor: pointer;
 }
-.dropdown {
+.nav__dropdown {
   display: inline-block;
   position: relative;
 }
-.dropdown-content {
+.nav__dropdown-content {
   display: none;
   flex-direction: column;
   position: absolute;
@@ -57,7 +58,7 @@ button {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.18);
 }
-.dropdown-content a {
+.nav__dropdown-content a {
   text-decoration: none;
   text-align: center;
   padding-inline: 10px;
@@ -65,7 +66,7 @@ button {
   color: rgb(255, 255, 255);
 }
 
-.drop-btn {
+.nav__dropdown-btn {
   border-radius: 10px;
   padding-block: 5px;
   padding-inline: 10px;
@@ -77,14 +78,12 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.drop-btn:hover,
-.drop-btn:focus {
+.nav__dropdown-btn:hover,
+.nav__dropdown-btn:focus {
   border: 1px solid black;
 }
-.show {
-  display: flex;
-}
-.dropdown-content > a:hover {
+
+.nav__dropdown-content > a:hover {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 20px 0 rgba(66, 62, 75, 0.37);
   backdrop-filter: blur(2px);
@@ -92,10 +91,17 @@ button {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.content {
+.web__description {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 150px;
+}
+
+.web_descripton-text {
+  font-family: "Mali", cursive;
+  color: #00004b;
+  text-align: center;
+  max-width: 50%;
 }
